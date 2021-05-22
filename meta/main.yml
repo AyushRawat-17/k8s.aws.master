@@ -9,8 +9,7 @@ galaxy_info:
   platforms:
    - name: Fedora
      versions:
-       - 33
-       - 30
+       - all
 
   galaxy_tags: [ 'kubernetes' , 'aws' , 'kubernetes-master']
     
