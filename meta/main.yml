@@ -11,7 +11,7 @@ galaxy_info:
      versions:
        - all
 
-  galaxy_tags: [ 'kubernetes' , 'aws' , 'kubernetes-master']
+  galaxy_tags: [ 'kubernetes', 'aws', 'kubernetes-master' ]
     
 dependencies: 
     - role: ayushrawat_17.k8s_aws_ec2
