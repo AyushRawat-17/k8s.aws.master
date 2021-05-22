@@ -1,38 +1,29 @@
-Kubernetes AWS Master
-=========
+## Kubernetes AWS Master
 
-This Role used to cofigure the Kubernetes Master on the AWS Linux 2 with the Container Engine Docker and CNI Flannel.
+This Role used to cofigure the Kubernetes Master on the Amazon Linux 2 with the Container Engine Docker and CNI Flannel.
 
-Requirements
-------------
+## Requirements
 
-boto3 Library is required to contact to the AWS
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+- **boto3** Library is required to contact to the AWS
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+ For provisioning of infrastructure `ayushrawat_17.k8s_aws_ec2` roles is required to configured the desired configuration but without this role infrastucture can also be created only requirement is the **Amazon Linux 2** .
 
-Example Playbook
-----------------
+## Example Playbook
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
+```yaml
+---
+    - hosts: tag_type_master
       roles:
-         - { role: username.rolename, x: 42 }
+         role: ayushrawat_17.k8s_aws_master
+```
 
-License
--------
+## License
 
 BSD
 
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+## Author Information
+ - **Ayush Rawat** (ayushrawatkv@gmail.com)
+     - https://twitter.com/rawatayush17
